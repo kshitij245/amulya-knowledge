@@ -1,0 +1,482 @@
+@import url("https://fonts.googleapls.com/css2?family=Poppins:wgth@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: poppins, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #666666;
+    background: #eaeff4;
+
+}
+
+
+/*global tags*/
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(35, 35,85);
+}
+
+span {
+    font-size: 1.9rem;
+    color: #757373;
+}
+
+h6 {
+    font-size: 1.4rem;
+    color: rgb(24, 24, 49);
+}
+
+
+/*Navigation*/
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 8vw;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+    z-index: 999;
+}
+
+nav img {
+    width: 150px;
+    cursor: pointer;
+}
+
+nav .navigation{
+    display: flex;
+}
+
+nav .navigation ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav .navigation ul li{
+    list-style: none;
+    margin-left: 30px;
+}
+
+nav .navigation ul li a {
+    text-decoration: none;
+    color: rgb(21, 21, 100);
+    font-size: 16px;
+    
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav .navigation ul li a:hover {
+    color: #F0C938
+}
+nav.navigation img{
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+/* Home*/
+
+#home {
+    background-image: linear-gradient(rgba(9,5,54,0.3),rgba(9,4,46,0.7)), url("");
+    width: 100%;
+    height: 100vb;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+}
+
+#home h2 {
+    color: #fff;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+#home p {
+    width: 50%;
+    color: #fff;
+    font-size: 0.9rem;
+    line-height: 25px;
+}
+
+#home .btn {
+    margin-top: 30px;
+}
+
+#home a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 55px;
+    background-color: #fff;
+    font-weight: 600
+    border radius 5px;
+}
+
+#home a.blue {
+    color: #fff;
+    background: rgb(21, 21, 100) ;
+    transition: 0.3s;
+}
+
+#home a.blue:hover {
+    color: rgb(21, 21, 100) ;
+    background: #fff ;
+}
+
+#home a.yellow {
+    color: #fff;
+    background: #F0C938 ;
+    transition: 0.3s;
+}
+
+#home a.yellow:hover {
+    color: rgb(21, 21, 100) ;
+    background: #fff ;
+}
+
+/*features*/
+
+#features{
+    padding: 5vw 8vw 0vw 8vw;
+    text-align: center;
+    margin-bottom: 5vw;
+}
+
+#features .fea-base{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+}
+
+#features .fea-box{
+    background: #f3f3ff;
+    text-align: start;
+}
+
+#features .fea-box i{
+    font-size: 2.3rem;
+    color: rgb(44, 44, 80);
+}
+
+#features .fea-box h3{
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: rgb(46, 46, 59);
+    padding: 13px 0 7px 0;
+
+}
+
+
+#features .fea-box p{
+    font-size: 1.0rem;
+    font-weight: 400;
+    color: rgb(70, 70, 87);    
+}
+
+
+#features .awfea-box{
+    background: #f3f3ff;
+    text-align: start;
+}
+
+#features .awfea-box i{
+    font-size: 2.3rem;
+    color: rgb(44, 44, 80);
+}
+
+#features .awfea-box h3{
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: rgb(46, 46, 59);
+    padding: 13px 0 7px 0;
+
+}
+
+
+#features .fea-box p{
+    font-size: 1.0rem;
+    font-weight: 400;
+    color: rgb(70, 70, 87);    
+}
+
+/*Courses*/
+
+#Courses{
+    padding: 8vw 8vw 0 8vw 8vw;
+    text-align: center;
+}
+
+#Courses .course-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+}
+
+#Courses .courses{
+    text-align: start;
+    background-color: #f9f9ff;
+    height: 100%;
+    position: relative;
+}
+
+#Courses .Courses img{
+    width: 100%;
+    height: 60%;
+    background-size: cover;
+    background-position: center;    
+}
+
+#Courses .courses .details {
+    padding: 15px 15px 0 15px;
+}
+
+#Courses .courses .details i{
+    color: #f0c938;                     /*Color not changing*/
+    font-size: .9rem;
+}
+
+#Courses .courses .cost{
+    background-color: rgb(74, 74, 134);
+    color: #ffffff;
+    font-size: .7rem;
+    line-height: 70px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    right: 15px;
+    bottom: 100px;
+}
+
+/*Reistration*/
+
+#registration {
+    padding: 6vw 8vw 6vw 8vw;
+    background-image: linear-gradient(rgba(99, 112, 168, 0.5),rgba(61, 92, 233, 0.5)), url("");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+}
+
+#registration .reminder{
+    color: #fff;
+}
+
+#registration .reminder h1{
+    color: #fff;
+}
+
+#registration .reminder .time{
+    display: flex;
+    margin-top: 40px;
+}
+
+#registration .reminder .time .days{
+    text-align: center;
+    padding: 13px 33px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 138, 0.37);
+    border-radius: 10px;
+    margin: 0 5px 10px 5px;
+    border: 1px rgba(255, 255, 255, 0.18);
+    font-size: 1.1rem;
+    font-weight: 600;
+
+}
+
+#registration .form {
+    margin-left: 180px;
+    background: #fff;
+    border-radius: 8px;
+    display: flex;                  /*Need Help to move it bit right*/
+    flex-direction: column;
+    padding: 40px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 138, 0.37);  
+}
+
+#registration .form input{
+    margin: 15px 0;
+    padding: 15px 10px;
+    border: 1px solid rgb(84, 40, 241);
+    outline: none;
+}
+
+#registration .form input::placeholder{
+    color: #413c3c;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+#registration .form .btn{
+    margin-top: 20px;
+}
+
+#registration .form .blue {
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 55px;
+    background-color: #fff;
+    font-weight: 600
+    border radius 5px;
+    color: #fff;
+    background: rgb(21, 21, 100) ;
+    transition: 0.3s;
+}
+
+#registration .form .blue:hover {
+    color: rgb(21, 21, 100) ;
+    background: #fff ;
+}
+
+#registration .form .yellow {
+    font-size: 0.9rem;
+    padding: 13px 55px;
+    background-color: #fff;
+    font-weight: 600
+    border radius 5px;                      /*To be shifted towards a bit right*/
+    text-decoration: none;
+    color: #000000;
+    background: #F0C938 ;
+    transition: 0.3s;
+}
+
+#registration .form a.yellow:hover {
+    color: rgb(21, 21, 100) ;
+    background: #fff ;
+}
+
+/*footer*/
+
+footer {
+    padding: 8vw;
+    background-color: #101c32;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+}
+
+footer .footer-row {
+    padding-bottom: 40px;
+}
+
+footer h1{
+    color: rgb(241, 248, 245);
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+footer li {
+    list-style: none;
+    color: #7b838a;
+    padding: 10px 0;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+footer li:hover {
+    color: rgb(241, 248, 245);
+    transition: 0.3s;
+}
+
+footer p{
+    color: #7b838a;
+}
+
+footer .mail {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+footer input {
+    width: 220px;
+    padding: 15px 12px;
+    background: #334f5c;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+
+footer .mail a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;             /*To be shifted towards right and make if narrow*/
+    background-color: #fff;
+    font-weight: 600
+}
+
+footer .mail a.yellow {
+    color: #fff;
+    background: #F0C938 ;
+    transition: 0.3s;
+}
+
+footer .mail a.yellow:hover {
+    color: rgb(21, 21, 100) ;
+    background: #fff ;
+}
+
+footer .copyright{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+footer .copyright p {
+    color: #fff;
+}
+
+footer .links{
+    margin-top: 0px;
+}
+
+footer .links img {
+    background-color: #5f7185;
+    color: #fff;
+
+}
+
+footer .links img:hover {
+    background-color: #fdc938;
+    color: #2c2c2c;
+}
+
+@media (max-width: 769px){
+    nav {
+        padding: 15px 20px;
+    }
+    nav img {
+        width: 130px;
+    }
+}
+
+
